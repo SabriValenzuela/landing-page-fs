@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Fanny Sepúlveda (Nezayen de Oriente)</title>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
@@ -52,27 +53,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="" data-scroll-nav="0">Inicio</a>
+              <a class="nav-link" href="#gallery" data-scroll-nav="0">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="1">Sobre mi</a>
+              <a class="nav-link" href="#sobreMi" data-scroll-nav="1">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="1">Servicios</a>
+              <a class="nav-link" href="#servicios" data-scroll-nav="2">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="2">Videos</a>
+              <a class="nav-link" href="#videos" data-scroll-nav="3">Videos</a>
             </li>
-           <!--  <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="3"
-                >Viajes a Egipto</a
-              >
-            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#" data-scroll-nav="6">Contacto</a>
+              <a class="nav-link" href="#contacto" data-scroll-nav="4">Contacto</a>
             </li>
           </ul>
         </div>
+        
       </div>
     </nav>
   </head>
@@ -92,17 +89,46 @@
     <br />
     <br />
     <br />
- <div class="title-banner"> 
-  <!-- <h1 style="margin-top: 40px;">Fanny Sepúlveda</h1>
+<!-- Slider -->
+<section id="gallery">
+  <div class="gallery-container">
+      <figure class="gallery-item">
+          <img src="./img/1.png" alt="Imagen 1">
+          <figcaption>Descripción de la imagen 1</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="./img/5.png" alt="Imagen 3">
+        <figcaption>Descripción de la imagen 3</figcaption>
+    </figure>
+      <figure class="gallery-item">
+          <img src="./img/2.png" alt="Imagen 2">
+          <figcaption>Descripción de la imagen 2</figcaption>
+      </figure>
+      <figure class="gallery-item">
+          <img src="./img/4.png" alt="Imagen 3">
+          <figcaption>Descripción de la imagen 3</figcaption>
+      </figure>
+  </div>
+  <nav class="gallery-navigation">
+      <button class="nav-button prev-button"></button>
+      <button class="nav-button next-button"></button>
+  </nav>
+</section>
+
+
+
+
+ <!-- <div class="title-banner"> 
+  <h1 style="margin-top: 40px;">Fanny Sepúlveda</h1>
   <h5 class="black">
     Bailarina y profesora de danza Árabe, Gitana y folcklor
-    egipcio. -->
-  </h5>
+    egipcio.
+  </h5> -->
    </div>
     <section class="banner" data-scroll-index="0" style="width: 1200px">
       <div class="banner-overlay">
         <div class="container">
-          <div class="row" style="margin-top:30px ;">
+          <div class="row" style="margin:30px ;">
             <div class="col-md-6 col-sm-12" style="padding: 20px">
               <div class="banner-text">
                 <div class="title"> 
@@ -125,8 +151,8 @@
                 asentado ya que amalgama sus tradiciones y folclores con los
                 folclores y las tradiciones de esos lugares.
               </p>
-              <div >
-                <button>Hablemos!</button>
+              <div style=" display: flex; align-items: center; justify-content: flex-end; color: black;">
+                <button  >¡Hablemos!</button>
             </div>
               <!-- <img src="img/fanny-inicio.png" class="img" /> -->
             </div>
@@ -134,40 +160,33 @@
         </div>
       </div>
     </section>
-    <br />
-    <br /><div class="title_vid white">
-     
-             <h1 style="color: white;">Sobre mi</h1>
-       
-         </div>
-    <section class="sobre_mi">
-      
-      <div class="container">
-        <div class="row_img" style="text-align: center">
-             <div class="col-md-4 col-sm-12">
-                <img class="about-me-img" src="/img/046.jpg" />
+ 
+         <section id="sobreMi" class="sobre_mi">
+          <div class="container">
+            <div class="row_img">
+              <div class="col-md-4 col-sm-12">
+                <img class="about-me-img" src="/img/046.jpg" alt="Sobre mí" />
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <h3>Sobre mí</h3>
+                <p class="about-text">
+                  Mi nombre es Fanny Sepúlveda Cárdenas Profesora Chilena de Danzas
+                  Árabes y Gitanas Investigó su historia, costumbres y tradiciones,
+                  Viajo Constantemente , en busca de la fuente y la raíz de las danzas
+                  que enseñó, teniendo la oportunidad de conocer, parte de Medio
+                  Oriente y Europa. Tengo más de 20 años enseñando a mujeres,
+                  ayudándoles a trabajar y fortalecer su autoestima a través de mis
+                  clases.                </p>
+                <p class="about-text">
+                  Mi trabajo consiste en traspasar mis conocimientos con respeto hacia
+                  las culturas, enamorada de la danza, más toda expresión de arte , mi
+                  afán es nunca dejar de aprender, estudiar e investigar...                </p>
+              </div>
             </div>
-            <div class="col-md-8 col-sm-12">
-       <!--    <h3>Sobre mi</h3> -->
-          <p>
-            Mi nombre es Fanny Sepúlveda Cárdenas Profesora Chilena de Danzas
-            Árabes y Gitanas Investigó su historia, costumbres y tradiciones,
-            Viajo Constantemente , en busca de la fuente y la raíz de las danzas
-            que enseñó, teniendo la oportunidad de conocer, parte de Medio
-            Oriente y Europa. Tengo más de 20 años enseñando a mujeres,
-            ayudándoles a trabajar y fortalecer su autoestima a través de mis
-            clases.
-          </p>
-          <p>
-            Mi trabajo consiste en traspasar mis conocimientos con respeto hacia
-            las culturas, enamorada de la danza, más toda expresión de arte , mi
-            afán es nunca dejar de aprender, estudiar e investigar..
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-   
+          </div>
+        </section>
+        
+  
     <!--   <div class="row_img">
         <div class="col-md-4 col-sm-12">
           <img src="/img/046.jpg" />
@@ -180,11 +199,12 @@
         </div>
       </div> -->
     </section>
-    <section class="servicios">
+    
+    <section id="servicios" class="servicios">
       <div class="row_serv">
         <div class="col-md-4 col-sm-12">
           <h4>Clases</h4>
-          <img src="img/fanny 6.jpg" />
+          <img src="img/EXPOGANESHA_059.JPG" />
           <br />
           <br />
           <p>
@@ -217,11 +237,11 @@
         </div>
       </div>
     </section>
-    <section class="videos">
+    <section id="videos" class="videos">
        
             <div class="title_vid white">
            <a href="https://youtube.com/@Nezayen?si=XTxdaMjjMsFgHFlN"> 
-                <h1 style="color: white;">Videos</h1>
+                <h1 >Videos</h1>
             </a> 
             </div>
              <div class="row_vid">
@@ -233,19 +253,19 @@
             </div>
             </div>
             <br>
-            <div class="title_vid white">
+            <div class="title_vid ">
           
-                   <h1 style="color: white;">Contacto</h1>
+                   <h1 >Contacto</h1>
             
                </div>
-            <section class="form-contacto">
+            <section id="contacto" class="form-contacto">
                   <!--  <h3>Contacto</h3> -->
                 <div class="row_contacto"> 
                 <div class="row_cont"> 
          
             <p><span class="fa fa-envelope-o"></span>escuela.danzayarte@gmail.com</p>
             <p>Celular: +56 91585095</p>
-            <i class="fa-brands fa-instagram">nezayendanzagitana</i>
+            <p>Instagram: nezayendanzagitana</p>
             
             <p>Facebook: Fanny Sepúlveda S</p>
             </div>
@@ -329,5 +349,7 @@
         </div>
            </section>       
   </body>
+  <script src="./script.js"></script>
+
 </html>
  
